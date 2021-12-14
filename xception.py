@@ -118,10 +118,6 @@ class Phase(nn.Module):
         return torch.tensor(out).unsqueeze(1).to(self.device)
 
 
-
-
-
-
 class Xception(nn.Module):
     """
     Xception optimized for the ImageNet dataset, as specified in
@@ -222,7 +218,6 @@ class Xception(nn.Module):
         x = self.fc(x)
 
         return x
-
 
 
 def xception(pretrained=False,**kwargs):
